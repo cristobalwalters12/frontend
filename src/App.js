@@ -11,8 +11,9 @@ function App() {
     <React.Fragment>
       <Router>
         <Routes>
+        <Route path='/dashboard'exact render={ props=>(<Dashboard{...props}/>)}/>
           <Route exact path="/" element={<Login/>}/>
-          <Route exact path="/dashboard" element={<Dashboard/>}/>
+         
           <Route exact path="/Nuevo" element={<Nuevo/>}/>
           <Route exact path="/Editar" element={<Editar/>}/>
         </Routes>
